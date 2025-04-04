@@ -50,7 +50,10 @@ fun SquishFartView() {
                     val imageIndex = rowIndex * columns + columnIndex
                     // resize to fit in view
                     if (imageIndex < Constraints.Infinity) {
-                        Box(modifier = Modifier.weight(1f, fill = true))
+                        Box(modifier = Modifier
+                            .weight(1f, fill = true)
+                            .fillParentMaxWidth()
+                        )
                         Image(
                             painter = squishFartImages[imageIndex],
                             contentDescription = "Adorable images",
