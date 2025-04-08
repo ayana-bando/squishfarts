@@ -3,14 +3,11 @@ package com.bando.android.squishfarts
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
+import androidx.navigation.compose.rememberNavController
 import com.bando.android.squishfarts.ui.theme.SquishFartsTheme
 import com.bando.android.squishfarts.view.SquishFartView
 
@@ -18,6 +15,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
+            val navController = rememberNavController()
             SquishFartsTheme {
                 Scaffold(
                     topBar = {
@@ -27,8 +25,8 @@ class MainActivity : ComponentActivity() {
                             }
                         )
                     }
-                ) {
-                    SquishFartView()
+                ) { innerPadding ->
+                    SquishFartView(onBack = { navController.popBackStack() }, innerPadding = innerPadding)
                 }
             }
         }
@@ -47,16 +45,13 @@ fun DefaultPreview() {
                     },
                     navigationIcon = {
                         IconButton(onClick = { }) {
-                            Icon(
-                                imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = ""
-                            )
+                            Icon(painterResource(R.drawable.arrow_back_icon), "")
                         }
                     }
                 )
             }
-        ) {
-            SquishFartView()
+        ) { innerPadding ->
+            SquishFartView(  {}, innerPadding)
         }
     }
 }
