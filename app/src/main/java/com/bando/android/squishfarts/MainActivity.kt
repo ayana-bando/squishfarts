@@ -3,11 +3,15 @@ package com.bando.android.squishfarts
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.*
+import androidx.compose.material.Icon
+import androidx.compose.material.IconButton
+import androidx.compose.material.Scaffold
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.compose.rememberNavController
+import com.bando.android.squishfarts.data.SquishFartImages
 import com.bando.android.squishfarts.ui.theme.SquishFartsTheme
 import com.bando.android.squishfarts.view.SquishFartView
 
@@ -15,7 +19,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val navController = rememberNavController()
             SquishFartsTheme {
                 Scaffold(
                     topBar = {
@@ -26,7 +29,7 @@ class MainActivity : ComponentActivity() {
                         )
                     }
                 ) { innerPadding ->
-                    SquishFartView(onBack = { navController.popBackStack() }, innerPadding = innerPadding)
+                    SquishFartView(innerPadding = innerPadding)
                 }
             }
         }
@@ -45,13 +48,22 @@ fun DefaultPreview() {
                     },
                     navigationIcon = {
                         IconButton(onClick = { }) {
-                            Icon(painterResource(R.drawable.arrow_back_icon), "")
+                            Icon(
+                                painterResource(squishFartImage.image),
+                                squishFartImage.description
+                            )
                         }
                     }
                 )
             }
         ) { innerPadding ->
-            SquishFartView(  {}, innerPadding)
+            SquishFartView(innerPadding)
         }
     }
 }
+
+private val squishFartImage = SquishFartImages(
+    id = 7,
+    image = R.drawable.rainbowmallow,
+    description = "Adorable RainbowMallow"
+)

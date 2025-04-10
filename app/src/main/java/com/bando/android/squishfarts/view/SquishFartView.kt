@@ -1,92 +1,119 @@
 package com.bando.android.squishfarts.view
 
+import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
+import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
+import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
-import androidx.compose.material.ButtonColors
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
-import androidx.compose.material.IconButton
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
-import androidx.compose.material.TopAppBar
-import androidx.compose.runtime.*
-import androidx.compose.ui.AbsoluteAlignment
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.bando.android.squishfarts.R
+import com.bando.android.squishfarts.data.SquishFartImages
 
 @Composable
-fun SquishFartView(onBack: () -> Unit, innerPadding: PaddingValues) {
-    val caticorn = painterResource(id = R.drawable.caticorn)
-    val cloudMallow = painterResource(id = R.drawable.cloudmallow)
-    val clownMallow = painterResource(id = R.drawable.clownmallow)
-    val ghostMallow = painterResource(id = R.drawable.ghostmallow)
-    val marshMallow = painterResource(id = R.drawable.marshsquish)
-    val munchMallow = painterResource(id = R.drawable.munchmallow)
-    val rainbowMallow = painterResource(id = R.drawable.rainbowmallow)
+fun SquishFartView( innerPadding: PaddingValues) {
 
     val squishFartImages = remember {
-        mutableStateListOf(
-            caticorn,
-            cloudMallow,
-            munchMallow,
-            clownMallow,
-            ghostMallow,
-            marshMallow,
-            rainbowMallow
+        listOf(
+            SquishFartImages(
+                id = 1,
+                image = R.drawable.caticorn,
+                description = "Adorable Cat-icorn"
+            ),
+            SquishFartImages(
+                id = 2,
+                image = R.drawable.cloudmallow,
+                description = "Adorable CloudMallow"
+            ),
+            SquishFartImages(
+                id = 3,
+                image = R.drawable.clownmallow,
+                description = "Adorable ClownMallow"
+            ),
+            SquishFartImages(
+                id = 4,
+                image = R.drawable.ghostmallow,
+                description = "Adorable GhostMallow"
+            ),
+            SquishFartImages(
+                id = 5,
+                image = R.drawable.marshsquish,
+                description = "Adorable MarshMallow"
+            ),
+            SquishFartImages(
+                id = 6,
+                image = R.drawable.munchmallow,
+                description = "Adorable MunchMallow"
+            ),
+            SquishFartImages(
+                id = 7,
+                image = R.drawable.rainbowmallow,
+                description = "Adorable RainbowMallow"
+            )
         )
     }
 
-    var isSelected by remember { mutableStateOf(false) }
+    var isSelected = remember { mutableStateOf(false) }
 
-    LazyVerticalGrid(
-        columns = GridCells.Adaptive(minSize = 130.dp),
+    var selectedImageId = 0
+    LazyVerticalStaggeredGrid(
+        columns = StaggeredGridCells.Adaptive(minSize = 128.dp),
         modifier = Modifier.padding(innerPadding)
     ) {
-        items(squishFartImages.size) { imageIndex ->
+        items(squishFartImages, key = { it.id }) { squishFart ->
             // TODO add sound to image click from list
             Image(
-                painter = squishFartImages[imageIndex],
+                painter = painterResource(squishFart.image),
                 contentDescription = "Adorable images",
                 modifier = Modifier
                     .padding(end = 16.dp, bottom = 8.dp)
-                    .clickable { isSelected = !isSelected }
+                    .clickable {
+                        isSelected.value = !isSelected.value
+                        selectedImageId = squishFart.id
+                    }
             )
 
-            //TODO update to display *selected* image
-            if (isSelected) {
+            if (isSelected.value && (squishFart.id == selectedImageId)) {
                 SelectedSquishFart(
-                    squishFartImage = squishFartImages[imageIndex],
-                    onDismiss = { !isSelected }
+                    squishFartImage = squishFart.image,
+                    onDismiss = isSelected,
+                    description = squishFart.description
                 )
-
             }
         }
-
     }
 }
 
 @Composable
 fun SelectedSquishFart(
-    squishFartImage: Painter,
-    onDismiss: () -> Unit
+    squishFartImage: Int,
+    onDismiss: MutableState<Boolean>,
+    description: String?
 ) {
-    Dialog(onDismissRequest = onDismiss) {
+    Dialog(onDismissRequest = { onDismiss.value = false }) {
         Card(
             modifier = Modifier
                 .fillMaxWidth()
@@ -94,15 +121,16 @@ fun SelectedSquishFart(
                 .padding(16.dp),
             shape = RoundedCornerShape(16.dp)
         ) {
-            Column( modifier = Modifier.padding(start = 16.dp, top = 8.dp),
+            Column(
+                modifier = Modifier.padding(start = 16.dp, top = 8.dp),
                 horizontalAlignment = Alignment.Start
             ) {
-                //TODO Add transparency to button
                 Button(
-                    onClick = onDismiss,
+                    onClick = { onDismiss.value = false },
                     modifier = Modifier
                         .height(25.dp)
                         .width(40.dp),
+                    elevation = ButtonDefaults.elevation(0.dp),
                     colors = ButtonDefaults.buttonColors(backgroundColor = Color.White)
                 ) {
                     Icon(
@@ -119,8 +147,8 @@ fun SelectedSquishFart(
 
                 // TODO add sound to image click
                 Image(
-                    painter = squishFartImage,
-                    contentDescription = "Adorable Image",
+                    painter = painterResource(squishFartImage),
+                    contentDescription = description,
                     contentScale = ContentScale.Fit,
                     modifier = Modifier
                         .height(260.dp)
@@ -134,12 +162,18 @@ fun SelectedSquishFart(
 @Preview
 @Composable
 fun SquishFartViewPreview() {
-    SquishFartView({ }, PaddingValues())
+    SquishFartView(PaddingValues())
 }
 
+@SuppressLint("UnrememberedMutableState")
 @Preview
 @Composable
 fun SelectedSquishFartDialogPreview() {
-    SelectedSquishFart(squishFartImage = painterResource(R.drawable.clownmallow)) {
-    }
+    SelectedSquishFart(squishFartImage.image, mutableStateOf(false), squishFartImage.description)
 }
+
+private val squishFartImage =  SquishFartImages(
+    id = 7,
+    image = R.drawable.rainbowmallow,
+    description = "Adorable RainbowMallow"
+)
