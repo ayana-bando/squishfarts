@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable arrow_back_icon
+drawable caticorn
+drawable close_icon
+drawable cloudmallow
+drawable clownmallow
+drawable download_icon
+drawable ghostmallow
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable marshsquish
+drawable munchmallow
+drawable rainbowmallow
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.SquishFarts
+xml backup_rules
+xml data_extraction_rules
