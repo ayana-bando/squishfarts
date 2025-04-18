@@ -1,5 +1,6 @@
 package com.bando.android.squishfarts.data
 
+//TODO add docs
 data class SoundEffects (
     val id: String,
     val category: Array<String>,
