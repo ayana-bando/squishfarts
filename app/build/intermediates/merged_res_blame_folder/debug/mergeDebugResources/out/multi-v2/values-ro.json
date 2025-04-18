@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.bando.android.squishfarts.app-mergeDebugResources-50:/values-ro/values-ro.xml",
+            "outputFile": "com.bando.android.squishfarts.app-mergeDebugResources-53:/values-ro/values-ro.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\1c6857766b945fb419c96fe922b1b9b1\\transformed\\foundation-release\\res\\values-ro\\values-ro.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,150",
-                        "endColumns": "94,99",
-                        "endOffsets": "145,245"
-                    },
-                    "to": {
-                        "startLines": "28,29",
-                        "startColumns": "4,4",
-                        "startOffsets": "2477,2572",
-                        "endColumns": "94,99",
-                        "endOffsets": "2567,2667"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\bd61fdce3b93f34044951e87ce96cdf0\\transformed\\core-1.15.0\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\89cfdcf85c758ec9f67ad3fa840e6633\\transformed\\core-1.16.0\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\8ae3cd858ab4074496395c1965997cf9\\transformed\\ui-release\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\3e75f9b290acbfb1665af684882a8357\\transformed\\foundation-release\\res\\values-ro\\values-ro.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,150",
+                        "endColumns": "94,99",
+                        "endOffsets": "145,245"
+                    },
+                    "to": {
+                        "startLines": "28,29",
+                        "startColumns": "4,4",
+                        "startOffsets": "2477,2572",
+                        "endColumns": "94,99",
+                        "endOffsets": "2567,2667"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\c6ee41c31332a6187124289663301893\\transformed\\ui-release\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
