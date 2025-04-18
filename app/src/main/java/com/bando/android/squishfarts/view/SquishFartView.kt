@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.bando.android.squishfarts.R
 import com.bando.android.squishfarts.data.SquishFartImages
-
+//TODO add docs
 @Composable
 fun SquishFartView( innerPadding: PaddingValues) {
 

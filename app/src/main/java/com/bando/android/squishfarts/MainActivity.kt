@@ -14,7 +14,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.bando.android.squishfarts.data.SquishFartImages
 import com.bando.android.squishfarts.ui.theme.SquishFartsTheme
 import com.bando.android.squishfarts.view.SquishFartView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

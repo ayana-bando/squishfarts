@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.bando.android.squishfarts.app-mergeDebugResources-50:/values-el/values-el.xml",
+            "outputFile": "com.bando.android.squishfarts.app-mergeDebugResources-53:/values-el/values-el.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\8ae3cd858ab4074496395c1965997cf9\\transformed\\ui-release\\res\\values-el\\values-el.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\c6ee41c31332a6187124289663301893\\transformed\\ui-release\\res\\values-el\\values-el.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\bd61fdce3b93f34044951e87ce96cdf0\\transformed\\core-1.15.0\\res\\values-el\\values-el.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,256,356,459,567,673,790",
-                        "endColumns": "97,102,99,102,107,105,116,100",
-                        "endOffsets": "148,251,351,454,562,668,785,886"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,24",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,203,306,406,509,617,723,2143",
-                        "endColumns": "97,102,99,102,107,105,116,100",
-                        "endOffsets": "198,301,401,504,612,718,835,2239"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\1c6857766b945fb419c96fe922b1b9b1\\transformed\\foundation-release\\res\\values-el\\values-el.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\3e75f9b290acbfb1665af684882a8357\\transformed\\foundation-release\\res\\values-el\\values-el.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2516,2614",
                         "endColumns": "97,101",
                         "endOffsets": "2609,2711"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\89cfdcf85c758ec9f67ad3fa840e6633\\transformed\\core-1.16.0\\res\\values-el\\values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,256,356,459,567,673,790",
+                        "endColumns": "97,102,99,102,107,105,116,100",
+                        "endOffsets": "148,251,351,454,562,668,785,886"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,24",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,203,306,406,509,617,723,2143",
+                        "endColumns": "97,102,99,102,107,105,116,100",
+                        "endOffsets": "198,301,401,504,612,718,835,2239"
                     }
                 }
             ]
