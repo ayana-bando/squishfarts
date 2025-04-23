@@ -25,6 +25,7 @@ class SquishFartViewModel @Inject constructor(private val squishFartRepo: Squish
         )
 
         viewModelScope.launch(Dispatchers.Main) {
+            //currently receiving 404 error
             val response = squishFartRepo.getSoundEffects(soundId, category)
             if(response.isSuccessful) {
                response.body()?.let { soundEffects.value = it }
