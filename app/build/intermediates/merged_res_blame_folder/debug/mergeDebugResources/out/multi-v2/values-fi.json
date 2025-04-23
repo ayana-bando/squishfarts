@@ -4,24 +4,7 @@
             "outputFile": "com.bando.android.squishfarts.app-mergeDebugResources-53:/values-fi/values-fi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\89cfdcf85c758ec9f67ad3fa840e6633\\transformed\\core-1.16.0\\res\\values-fi\\values-fi.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,351,456,561,673,789",
-                        "endColumns": "95,101,97,104,104,111,115,100",
-                        "endOffsets": "146,248,346,451,556,668,784,885"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,24",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,201,303,401,506,611,723,2115",
-                        "endColumns": "95,101,97,104,104,111,115,100",
-                        "endOffsets": "196,298,396,501,606,718,834,2211"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\c6ee41c31332a6187124289663301893\\transformed\\ui-release\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\eca96c285584e1d4adc869436b4c024e\\transformed\\ui-release\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\3e75f9b290acbfb1665af684882a8357\\transformed\\foundation-release\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\4af9c1417bb7d5f6a1ea4f2db8ce135b\\transformed\\core-1.16.0\\res\\values-fi\\values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,351,456,561,673,789",
+                        "endColumns": "95,101,97,104,104,111,115,100",
+                        "endOffsets": "146,248,346,451,556,668,784,885"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,24",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,201,303,401,506,611,723,2115",
+                        "endColumns": "95,101,97,104,104,111,115,100",
+                        "endOffsets": "196,298,396,501,606,718,834,2211"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\46660efbfb119c2c4a8b989a2aec6060\\transformed\\foundation-release\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

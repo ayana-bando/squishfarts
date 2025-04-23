@@ -4,7 +4,7 @@
             "outputFile": "com.bando.android.squishfarts.app-mergeDebugResources-53:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\c6ee41c31332a6187124289663301893\\transformed\\ui-release\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\eca96c285584e1d4adc869436b4c024e\\transformed\\ui-release\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\89cfdcf85c758ec9f67ad3fa840e6633\\transformed\\core-1.16.0\\res\\values-en-rCA\\values-en-rCA.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,352,451,555,657,773",
-                        "endColumns": "95,101,98,98,103,101,115,100",
-                        "endOffsets": "146,248,347,446,550,652,768,869"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,24",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,201,303,402,501,605,707,2072",
-                        "endColumns": "95,101,98,98,103,101,115,100",
-                        "endOffsets": "196,298,397,496,600,702,818,2168"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\3e75f9b290acbfb1665af684882a8357\\transformed\\foundation-release\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\46660efbfb119c2c4a8b989a2aec6060\\transformed\\foundation-release\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2436,2522",
                         "endColumns": "85,84",
                         "endOffsets": "2517,2602"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ayana\\.gradle\\caches\\8.11.1\\transforms\\4af9c1417bb7d5f6a1ea4f2db8ce135b\\transformed\\core-1.16.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,352,451,555,657,773",
+                        "endColumns": "95,101,98,98,103,101,115,100",
+                        "endOffsets": "146,248,347,446,550,652,768,869"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,24",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,201,303,402,501,605,707,2072",
+                        "endColumns": "95,101,98,98,103,101,115,100",
+                        "endOffsets": "196,298,397,496,600,702,818,2168"
                     }
                 }
             ]

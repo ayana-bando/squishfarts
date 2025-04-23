@@ -18,6 +18,7 @@ android {
         versionCode 1
         versionName "1.0"
 
+        buildConfigField("String", "FREESOUND_API_KEY", FREESOUND_API_KEY)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary true
@@ -51,6 +52,7 @@ android {
     }
     buildFeatures {
         compose true
+        android.buildFeatures.buildConfig true
     }
     composeOptions {
         kotlinCompilerExtensionVersion compose_version
@@ -64,7 +66,7 @@ android {
 }
 
 dependencies {
-    //OKHttp
+    // OKHttp
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     //Hilt-Dagger
     implementation("com.google.dagger:hilt-android:2.56.1")
@@ -78,11 +80,14 @@ dependencies {
     // Retrofit with Scalar Converter
     implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
 
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation "androidx.core:core-ktx:1.16.0"
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:1.7.8"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
 
     implementation "androidx.navigation:navigation-compose:2.8.9"
     implementation "androidx.activity:activity-compose:1.10.1"
