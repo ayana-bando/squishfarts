@@ -13,7 +13,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
-private const val BASE_URL = "https://freesound.org/apiv2/"
+private const val BASE_URL = "https://freesound.org/apiv2/sounds/"
 private val API_KEY = BuildConfig.FREESOUND_API_KEY
 //TODO add docs
 @Module
@@ -23,8 +23,7 @@ object SquishFartModule {
         .addInterceptor(Interceptor { chain ->
             val request: Request = chain.request()
                 .newBuilder()
-                .header("accept", "application/json")
-                .header("Authorization", " Token $API_KEY")
+                .header("Authorization", "Token $API_KEY")
                 .build()
             chain.proceed(request)
         })

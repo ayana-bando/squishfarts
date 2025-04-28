@@ -10,5 +10,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Field from default config.
-  public static final String FREESOUND_API_KEY = "HT4WZwCJRlwfdwVCErui";
+  public static final String FREESOUND_API_KEY = "Utsf9bk0z3PCkQcFGWsKo5q4VwjylLEMsJhAjPi1";
 }

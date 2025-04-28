@@ -1,106 +1,106 @@
 [
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_munchmallow.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/munchmallow.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/xml_backup_rules.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/xml_data_extraction_rules.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/xml/data_extraction_rules.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/xml_backup_rules.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/xml/backup_rules.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_ghostmallow.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/ghostmallow.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_rainbowmallow.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/rainbowmallow.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_munchmallow.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/munchmallow.png"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable_close_icon.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable/close_icon.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_ghostmallow.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/ghostmallow.png"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable_arrow_back_icon.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable/arrow_back_icon.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/xml_data_extraction_rules.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_caticorn.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/caticorn.png"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable_close_icon.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable/close_icon.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_rainbowmallow.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/rainbowmallow.png"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable_download_icon.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable/download_icon.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_cloudmallow.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/cloudmallow.png"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_cloudmallow.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/cloudmallow.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable_arrow_back_icon.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable/arrow_back_icon.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable/ic_launcher_background.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable_download_icon.xml.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable/download_icon.xml"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_caticorn.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/caticorn.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_marshsquish.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/marshsquish.png"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_marshsquish.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/marshsquish.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.bando.android.squishfarts.app-debug-55:/drawable-nodpi_clownmallow.png.flat",
-        "source": "com.bando.android.squishfarts.app-main-57:/drawable-nodpi/clownmallow.png"
+        "merged": "com.bando.android.squishfarts.app-debug-56:/drawable-nodpi_clownmallow.png.flat",
+        "source": "com.bando.android.squishfarts.app-main-58:/drawable-nodpi/clownmallow.png"
     }
 ]

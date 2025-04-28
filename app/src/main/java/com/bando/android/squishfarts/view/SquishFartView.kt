@@ -20,7 +20,6 @@ import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -35,22 +34,11 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.bando.android.squishfarts.R
 import com.bando.android.squishfarts.data.SquishFartImages
 import com.bando.android.squishfarts.viewmodel.SquishFartViewModel
-import java.util.logging.Logger
 
 //TODO add docs
 @Composable
 fun SquishFartView(innerPadding: PaddingValues, viewModel: SquishFartViewModel = viewModel()) {
-    viewModel.getSoundEffects("623168", arrayOf("sound effects"))
-    val soundEffects = viewModel.soundEffects.collectAsState()
-    // Create a Logger
-    val logger = Logger.getLogger(
-        SquishFartViewModel::class.java.getName()
-    )
-//access fart from https://freesound.org/people/jixolros/sounds/623168 game_pootlong_06.wav
 
-    // log messages using log(Level level, String msg)
-//    logger.log(Level.INFO, "MainActivity" + soundEffects.value.first().type)
-   // print(soundEffects.value.first().type)
     val squishFartImages = remember {
         listOf(
             SquishFartImages(
@@ -108,6 +96,7 @@ fun SquishFartView(innerPadding: PaddingValues, viewModel: SquishFartViewModel =
                     .clickable {
                         isSelected.value = !isSelected.value
                         selectedImageId = squishFart.id
+                        viewModel.soundEffects.value.first().name
                     }
             )
 

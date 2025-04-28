@@ -24,14 +24,14 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     private val viewModel: SquishFartViewModel by viewModels()
-// TODO follow the steps here: https://dev.to/robotsquidward/android-viewmodel-manual-dependency-injection-made-easy-3cnk
+
     override fun onCreateView(
     parent: View?,
     name: String,
     context: Context,
     attrs: AttributeSet
     ): View? {
-        viewModel.getSoundEffects("623168", arrayOf("sound effects"))
+        viewModel.getSoundEffects("623168")
         return super.onCreateView(parent, name, context, attrs)
     }
 

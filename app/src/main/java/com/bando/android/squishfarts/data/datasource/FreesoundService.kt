@@ -10,7 +10,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.Path
-import retrofit2.http.Query
 
 /**
  * Interface for Freesound [data](https://freesound.org/docs/api/resources_apiv2.html)
@@ -25,10 +24,8 @@ interface FreesoundService {
      * @param duration [String] Duration of sound in seconds
      */
     @Headers("Accept: application/json")
-    @GET("sounds/{sound_id}/search?")
+    @GET("{sound_id}/")
     suspend fun getSoundEffects(
         @Path("sound_id") soundId: String,
-        @Query("category") category: Array<String>,
-        @Query("duration") duration: String? = null
-    ): Response<List<SoundEffects>>
+    ): Response<SoundEffects>
 }

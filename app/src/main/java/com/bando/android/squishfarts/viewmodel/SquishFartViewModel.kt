@@ -15,25 +15,18 @@ import javax.inject.Inject
 //TODO - add doc
 @HiltViewModel
 class SquishFartViewModel @Inject constructor(private val squishFartRepo: SquishFartRepository) : ViewModel() {
-    var soundEffects = MutableStateFlow(listOf<SoundEffects>())
+    var soundEffects = MutableStateFlow(mutableListOf<SoundEffects>())
 
-    // TODO - build out get sound effects function
-    fun getSoundEffects(soundId: String, category: Array<String>) {
+    fun getSoundEffects(soundId: String) {
         // Create a Logger
         val logger = Logger.getLogger(
             SquishFartViewModel::class.java.getName()
         )
 
         viewModelScope.launch(Dispatchers.Main) {
-            //currently receiving 404 error
-            val response = squishFartRepo.getSoundEffects(soundId, category)
+            val response = squishFartRepo.getSoundEffects(soundId)
             if(response.isSuccessful) {
-               response.body()?.let { soundEffects.value = it }
-
-
-                // log messages using log(Level level, String msg)
-                logger.log(Level.INFO, "ViewModel" + soundEffects.value.first().type)
-                print(soundEffects.value.first().type)
+               response.body()?.let { soundEffects.value.add(it) }
             } else {
                 logger.log(Level.SEVERE, "$response.code() $response.message()")
             }

@@ -122,6 +122,14 @@
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.customview:customview:1.0.0@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-exoplayer:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-common:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-container:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-datasource:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-database:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-decoder:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-extractor:1.6.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: androidx.media3:media3-datasource-okhttp:1.6.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.compose.material:material-android:1.7.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.compose.animation:animation-core-android:1.7.8@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.compose.foundation:foundation-android:1.7.8@aar" level="project" />
@@ -162,6 +170,9 @@
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.8.1" level="project" />
     <orderEntry type="library" name="Gradle: com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-scalars:2.11.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:33.3.1-android" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:failureaccess:1.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" level="project" />
     <orderEntry type="library" name="Gradle: com.squareup.retrofit2:converter-gson:2.11.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.10.1" level="project" />
   </component>

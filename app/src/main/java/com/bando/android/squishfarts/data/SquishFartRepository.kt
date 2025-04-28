@@ -6,11 +6,11 @@ import javax.inject.Inject
 
 // TODO-add docs
 interface SquishFartRepository {
-    suspend fun getSoundEffects(soundId: String, category: Array<String>): Response<List<SoundEffects>>
+    suspend fun getSoundEffects(soundId: String): Response<SoundEffects>
 }
 
 class SquishFartRepositoryImpl @Inject constructor(private val freesoundService: FreesoundService) : SquishFartRepository {
-    override suspend fun getSoundEffects(soundId: String, category: Array<String>): Response<List<SoundEffects>> {
-        return freesoundService.getSoundEffects(soundId, category)
+    override suspend fun getSoundEffects(soundId: String): Response<SoundEffects> {
+        return freesoundService.getSoundEffects(soundId)
     }
 }
